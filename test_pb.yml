@@ -1,0 +1,15 @@
+- hosts: Romanov
+  tasks:
+    
+    - name: Install cmatrix
+      become: yes
+      apt: pkg=cmatrix state=latest
+
+    - name: Install cowsay
+      become: yes
+      apt: pkg=cowsay state=latest
+
+    - name: Install sl
+      become: yes
+      apt: pkg=sl state=latest
+
